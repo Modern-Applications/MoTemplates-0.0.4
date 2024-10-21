@@ -1,0 +1,21 @@
+        .graph {
+            display: flex;
+            align-items: flex-end; /* Align bars to the bottom */
+            height: 200px; /* Set the height of the graph */
+            width: 100px; /* Set the width of the graph */
+            border-left: 2px solid black; /* Left border for the Y-axis */
+            border-bottom: 2px solid black; /* Bottom border for the X-axis */
+            position: relative; /* Positioning for labels */
+            margin: 20px;
+        }
+
+        .bar {
+            width: 30px; /* Width of each bar */
+            background-color: blue; /* Bar color */
+            margin-right: 10px; /* Space between bars */
+            transition: height 0.3s; /* Animation effect on height change */
+        }
+
+        .bar1 { height: 50px; } /* Height for the first bar */
+        .bar2 { height: 100px; } /* Height for the second bar */
+        .bar3 { height: 150px; } /* Height for the third bar */

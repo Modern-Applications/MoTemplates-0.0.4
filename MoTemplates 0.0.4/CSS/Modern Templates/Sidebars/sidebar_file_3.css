@@ -1,0 +1,84 @@
+  /* General Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+  }
+
+  /* Sidebar 1 */
+  .sidebar-1 {
+    background: #333;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Sidebar 2 */
+  .sidebar-2 {
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Sidebar 3 */
+  .sidebar-3 {
+    background: #2c3e50;
+    transform: perspective(600px) rotateY(-15deg);
+    box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Sidebar 4 */
+  .sidebar-4 {
+    background: #8e44ad;
+    box-shadow: inset -10px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Sidebar 5 */
+  .sidebar-5 {
+    background: #16a085;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), -5px -5px 20px rgba(255, 255, 255, 0.2);
+  }
+
+  /* Sidebar 6 */
+  .sidebar-6 {
+    background: linear-gradient(to right, #1abc9c, #16a085);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Sidebar 7 */
+  .sidebar-7 {
+    background: #f39c12;
+    transform: skewY(-5deg);
+    box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Sidebar 8 */
+  .sidebar-8 {
+    background: #e74c3c;
+    border-radius: 50px 0 0 50px;
+    box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Sidebar 9 */
+  .sidebar-9 {
+    background: #34495e;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.8), 0 0 40px rgba(46, 204, 113, 0.6);
+  }
+
+  /* Sidebar 10 */
+  .sidebar-10 {
+    background: #2980b9;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+    border: 3px solid #3498db;
+  }
+
+  /* Content Use if needed only*/
+  .content_neededonly {
+    margin-left: 270px;
+    padding: 20px;
+  }
+
+  /* Scrollable sections */
+  .section_neededonly {
+    margin-bottom: 100px;
+  }

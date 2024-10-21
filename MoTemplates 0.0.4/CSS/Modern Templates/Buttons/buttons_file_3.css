@@ -1,0 +1,370 @@
+/* Button 41 - Morphing */
+.button-morph {
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  position: relative;
+  transition: width 0.4s ease, background-color 0.4s ease;
+  width: 100px;
+}
+
+.button-morph:hover {
+  background-color: #311b92;
+  width: 150px;
+}
+
+/* Button 42 - Split Color */
+.button-split {
+  background: linear-gradient(to right, #ff4081 50%, #ff80ab 50%);
+  color: white;
+  border: none;
+  background-size: 200%;
+  background-position: right;
+  transition: background-position 0.4s ease;
+}
+
+.button-split:hover {
+  background-position: left;
+}
+
+/* Button 43 - Transparent Border */
+.button-transparent-border {
+  background-color: transparent;
+  color: #ff5722;
+  border: 2px solid rgba(255, 87, 34, 0.5);
+  transition: border-color 0.3s ease;
+}
+
+.button-transparent-border:hover {
+  border-color: #ff5722;
+}
+
+/* Button 44 - Embossed */
+.button-embossed {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.button-embossed:hover {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/* Button 45 - Blurred Text */
+.button-blurred-text {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  position: relative;
+}
+
+.button-blurred-text::before {
+  content: 'Hover Me';
+  position: absolute;
+  color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.button-blurred-text:hover::before {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Button 46 - Animated Dashes */
+.button-dashed {
+  background-color: transparent;
+  color: #ff9800;
+  border: 2px dashed #ff9800;
+  position: relative;
+}
+
+.button-dashed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff9800;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.button-dashed:hover::before {
+  width: 100%;
+}
+
+/* Button 47 - Inner Glow */
+.button-inner-glow {
+  background-color: #03a9f4;
+  color: white;
+  border: none;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Button 48 - Expanding Shadow */
+.button-expanding-shadow {
+  background-color: #ffeb3b;
+  color: black;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.button-expanding-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button 49 - Ribbon */
+.button-ribbon {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  position: relative;
+  padding-right: 30px;
+}
+
+.button-ribbon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background-color: white;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+}
+
+/* Button 50 - Outline Expand */
+.button-outline-expand {
+  background-color: transparent;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
+  transition: background-color 0.3s ease;
+}
+
+.button-outline-expand:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* Button 51 - Filled Text */
+.button-filled-text {
+  background-color: transparent;
+  color: #673ab7;
+  border: none;
+  position: relative;
+}
+
+.button-filled-text::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: #673ab7;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.button-filled-text:hover::before {
+  width: 100%;
+}
+
+.button-filled-text:hover {
+  color: white;
+}
+
+/* Button 52 - Multi-layered */
+.button-multi-layer {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  position: relative;
+}
+
+.button-multi-layer::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 2px solid white;
+  pointer-events: none;
+}
+
+/* Button 53 - Zoom */
+.button-zoom {
+  background-color: #9c27b0;
+  color: white;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.button-zoom:hover {
+  transform: scale(1.1);
+}
+
+/* Button 54 - Diagonal Lines */
+.button-diagonal-lines {
+  background-color: #00e676;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-diagonal-lines::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+  z-index: 1;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Button 55 - Corner Borders */
+.button-corner-borders {
+  background-color: #ffeb3b;
+  color: black;
+  border: none;
+  position: relative;
+}
+
+.button-corner-borders::before, .button-corner-borders::after {
+  content: '';
+  position: absolute;
+  border: 2px solid black;
+}
+
+.button-corner-borders::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.button-corner-borders::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 0;
+  border-left: 0;
+}
+
+/* Button 56 - Triangle Edge */
+.button-triangle-edge {
+  background-color: transparent;
+  color: #ff5722;
+  border: none;
+  position: relative;
+}
+
+.button-triangle-edge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  background-color: #ff5722;
+  z-index: -1;
+  transition: transform 0.4s ease;
+}
+
+.button-triangle-edge:hover::before {
+  transform: rotate(90deg);
+}
+
+/* Button 57 - Tilted */
+.button-tilted {
+  background-color: #607d8b;
+  color: white;
+  border: none;
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.button-tilted:hover {
+  transform: rotate(0);
+}
+
+/* Button 58 - Layered Borders */
+.button-layered-borders {
+  background-color: transparent;
+  color: #4caf50;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.button-layered-borders:hover {
+  border-color: #4caf50;
+}
+
+.button-layered-borders::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #4caf50;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Button 59 - Striped */
+.button-striped {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  background: repeating-linear-gradient(45deg, #e91e63, #e91e63 10px, #f06292 10px, #f06292 20px);
+}
+
+/* Button 60 - Gradient Shine */
+.button-gradient-shine {
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-gradient-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.7s ease;
+}
+
+.button-gradient-shine:hover::before {
+  left: 100%;
+}

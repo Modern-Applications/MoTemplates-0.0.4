@@ -1,0 +1,169 @@
+/* Base style for all topbars */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 100px 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+}
+
+/* Topbar 1 - Solid Color */
+.topbar-1 {
+    background-color: #2196f3;
+}
+
+/* Topbar 2 - Gradient */
+.topbar-2 {
+    background: linear-gradient(to right, #ff5722, #ff9800);
+}
+
+/* Topbar 3 - Box Shadow */
+.topbar-3 {
+    background-color: #4caf50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Topbar 4 - Transparent Background */
+.topbar-4 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Topbar 5 - Border Bottom */
+.topbar-5 {
+    background-color: #3f51b5;
+    border-bottom: 3px solid #ffeb3b;
+}
+
+/* Topbar 6 - Fixed with Left Border */
+.topbar-6 {
+    background-color: #ff5722;
+    border-left: 5px solid #ffeb3b;
+}
+
+/* Topbar 7 - Fixed with Icon */
+.topbar-7 {
+    background-color: #9c27b0;
+    padding-left: 20px;
+}
+
+.topbar-7 h2::before {
+    content: '🚀';
+    margin-right: 10px;
+}
+
+/* Topbar 8 - Centered Title */
+.topbar-8 {
+    background-color: #00bcd4;
+    text-align: center;
+}
+
+/* Topbar 9 - Rounded Corners */
+.topbar-9 {
+    background-color: #ffeb3b;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Topbar 10 - Transparent with Border */
+.topbar-10 {
+    background-color: transparent;
+    border-bottom: 2px solid #ff5722;
+}
+
+/* Topbar 11 - Text Shadow */
+.topbar-11 {
+    background-color: #e91e63;
+}
+
+.topbar-11 h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Topbar 12 - Floating Topbar */
+.topbar-12 {
+    background-color: #607d8b;
+    width: 90%;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Topbar 13 - Icon and Title */
+.topbar-13 {
+    background-color: #673ab7;
+    padding-left: 20px;
+}
+
+.topbar-13 h2::before {
+    content: '🌟';
+    margin-right: 10px;
+}
+
+/* Topbar 14 - Vertical Gradient */
+.topbar-14 {
+    background: linear-gradient(to bottom, #ff5722, #e91e63);
+}
+
+/* Topbar 15 - Fixed and Transparent */
+.topbar-15 {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+/* Topbar 16 - Solid Color with Logo */
+.topbar-16 {
+    background-color: #00e676;
+    padding-left: 20px;
+}
+
+.topbar-16 h2::before {
+    content: '🎨';
+    margin-right: 10px;
+}
+
+/* Topbar 17 - Centered Title with Shadow */
+.topbar-17 {
+    background-color: #ff9800;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Topbar 18 - Sticky with Bottom Border */
+.topbar-18 {
+    background-color: #8e44ad;
+    border-bottom: 2px solid white;
+}
+
+/* Topbar 19 - Transparent Gradient */
+.topbar-19 {
+    background: linear-gradient(to right, rgba(255, 87, 34, 0.8), rgba(255, 193, 7, 0.8));
+}
+
+/* Topbar 20 - Full-Width with Icon */
+.topbar-20 {
+    background-color: #009688;
+    padding-left: 20px;
+}
+
+.topbar-20 h2::before {
+    content: '🎵';
+    margin-right: 10px;
+}

@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background: #f0f0f0; /* Background color */
+}
+
+/* Sidebar Container */
+.sidebar {
+    width: 250px; /* Width of sidebar */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide by default */
+    transition: left 0.3s ease, transform 0.3s ease;
+    transform-style: preserve-3d;
+    z-index: 1000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sidebar Open */
+.sidebar.open {
+    left: 0; /* Show when open */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Sidebar 1 */
+.sidebar.type1 {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+/* Sidebar 2 */
+.sidebar.type2 {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Sidebar 3 */
+.sidebar.type3 {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+
+/* Sidebar 4 */
+.sidebar.type4 {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* Sidebar 5 */
+.sidebar.type5 {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+/* 3D Effect */
+.sidebar:hover {
+    transform: rotateY(10deg); /* Rotate for 3D effect */
+}
+
+/* Hover Effects */
+.sidebar a:hover {
+    transform: translateX(10px); /* Move links slightly on hover */
+    background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Smaller width on mobile */
+    }
+}

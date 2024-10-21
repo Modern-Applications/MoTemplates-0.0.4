@@ -1,0 +1,202 @@
+/* Base button styles */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button 1 - Default */
+  .button-default {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  /* Button 2 - Outline */
+  .button-outline {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+  
+  /* Button 3 - Flat */
+  .button-flat {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    box-shadow: none;
+  }
+  
+  /* Button 4 - Ghost */
+  .button-ghost {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  /* Button 5 - Rounded */
+  .button-rounded {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  /* Button 6 - Shadow */
+  .button-shadow {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button 7 - Gradient */
+  .button-gradient {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    border: none;
+  }
+  
+  /* Button 8 - Neon */
+  .button-neon {
+    background-color: #1f1f1f;
+    color: #00e6ff;
+    border: 2px solid #00e6ff;
+    box-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
+  }
+  
+  /* Button 9 - Text */
+  .button-text {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    text-decoration: underline;
+  }
+  
+  /* Button 10 - Icon */
+  .button-icon {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    position: relative;
+  }
+  
+  .button-icon::before {
+    content: '✓';
+    position: absolute;
+    left: -25px;
+    top: 0;
+  }
+  
+  /* Button 11 - Pill */
+  .button-pill {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  /* Button 12 - Raised */
+  .button-raised {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button 13 - 3D */
+  .button-3d {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    box-shadow: 0 6px #543a92;
+    transform: translateY(0);
+  }
+  
+  .button-3d:active {
+    transform: translateY(6px);
+    box-shadow: none;
+  }
+  
+  /* Button 14 - Inset */
+  .button-inset {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button 15 - Rounded Outline */
+  .button-rounded-outline {
+    background-color: transparent;
+    color: #28a745;
+    border: 2px solid #28a745;
+    border-radius: 50px;
+  }
+  
+  /* Button 16 - Skewed */
+  .button-skewed {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transform: skew(-15deg);
+  }
+  
+  /* Button 17 - Wave */
+  .button-wave {
+    background-color: #f8f9fa;
+    color: #007bff;
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button-wave::before {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 123, 255, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .button-wave:active::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  /* Button 18 - Flip */
+  .button-flip {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    perspective: 1000px;
+  }
+  
+  .button-flip:hover {
+    transform: rotateY(180deg);
+  }
+  
+  /* Button 19 - Outline Gradient */
+  .button-outline-gradient {
+    background: transparent;
+    color: #ff7e5f;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    border-image-slice: 1;
+  }
+  
+  /* Button 20 - Disabled */
+  .button-disabled {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+  

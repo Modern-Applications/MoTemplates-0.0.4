@@ -1,0 +1,147 @@
+.sidebar {
+    width: 250px; /* Default width */
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide by default */
+    height: 100%;
+    background-color: #2c3e50; /* Base color */
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Sidebar Open */
+.sidebar.open {
+    left: 0; /* Show when open */
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    padding: 20px;
+    background: #34495e; /* Header color */
+    color: white;
+    text-align: center;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+/* Hover Effects */
+.sidebar a:hover {
+    background-color: #1abc9c; /* Hover color */
+}
+
+/* Sidebar Types */
+
+/* Type 1 */
+.sidebar.type1 {
+    background-color: #2980b9; /* Blue */
+}
+
+/* Type 2 */
+.sidebar.type2 {
+    background-color: #8e44ad; /* Purple */
+}
+
+/* Type 3 */
+.sidebar.type3 {
+    background-color: #c0392b; /* Red */
+}
+
+/* Type 4 */
+.sidebar.type4 {
+    background-color: #d35400; /* Orange */
+}
+
+/* Type 5 */
+.sidebar.type5 {
+    background-color: #27ae60; /* Green */
+}
+
+/* Type 6 */
+.sidebar.type6 {
+    background-color: #3498db; /* Light Blue */
+}
+
+/* Type 7 */
+.sidebar.type7 {
+    background-color: #f39c12; /* Bright Orange */
+}
+
+/* Type 8 */
+.sidebar.type8 {
+    background-color: #e74c3c; /* Bright Red */
+}
+
+/* Type 9 */
+.sidebar.type9 {
+    background-color: #1abc9c; /* Teal */
+}
+
+/* Type 10 */
+.sidebar.type10 {
+    background-color: #9b59b6; /* Dark Purple */
+}
+
+/* Type 11 */
+.sidebar.type11 {
+    background-color: #34495e; /* Dark Grey */
+}
+
+/* Type 12 */
+.sidebar.type12 {
+    background-color: #2ecc71; /* Light Green */
+}
+
+/* Type 13 */
+.sidebar.type13 {
+    background-color: #16a085; /* Dark Teal */
+}
+
+/* Type 14 */
+.sidebar.type14 {
+    background-color: #f1c40f; /* Bright Yellow */
+}
+
+/* Type 15 */
+.sidebar.type15 {
+    background-color: #e67e22; /* Soft Orange */
+}
+
+/* Type 16 */
+.sidebar.type16 {
+    background-color: #7f8c8d; /* Grey */
+}
+
+/* Type 17 */
+.sidebar.type17 {
+    background-color: #bdc3c7; /* Light Grey */
+}
+
+/* Type 18 */
+.sidebar.type18 {
+    background-color: #2980b9; /* Blue */
+}
+
+/* Type 19 */
+.sidebar.type19 {
+    background-color: #8e44ad; /* Purple */
+}
+
+/* Type 20 */
+.sidebar.type20 {
+    background-color: #c0392b; /* Red */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Smaller width */
+    }
+}
